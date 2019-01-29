@@ -18,7 +18,7 @@ let httpServer=http.createServer(function(req,res){
 
 //Start the http server and have it listen on port config.port
 httpServer.listen(config.httpPort,function(){
-    console.log('Server is listening on port '+config.httpPort+' now in '+config.envName+' mode');
+    console.log('Server is listening on port '+config.httpPort);
 });
 
 //Instantiate the https server
@@ -32,7 +32,7 @@ let httpsServer=https.createServer(httpsServerOptions,function(req,res){
 
 //Start the https server and have it listen on port config.port
 httpsServer.listen(config.httpsPort,function(){
-    console.log('Server is listening on port '+config.httpsPort+' now in '+config.envName+' mode');
+    console.log('Server is listening on port '+config.httpsPort);
 });
 
 //All the server logic for both the http and https server
@@ -126,7 +126,7 @@ handlers.ping=function(data,callback){
 //Define hello handler
 handlers.hello=function(data,callback){
     //callback a http status code and a payload object
-    callback(406,{'message':'Welcome to hello API.Hope you have a great day :)'});
+    callback(200,{'message':'Welcome to hello API.Hope you have a great day :)'});
 }
 
 //Not found handler
