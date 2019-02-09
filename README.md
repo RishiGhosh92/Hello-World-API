@@ -18,10 +18,12 @@ Hello World API is open source with a [public repository][hello] on GitHub.
 
 Hello World API requires [Node.js](https://nodejs.org/) v4+ to run.
 
-Install the dependencies and devDependencies and start the server.
+Clone the repo, install the dependencies and start the server.
 
 ```sh
-$ cd 
+$ git clone git@github.com:RishiGhosh92/Node-MasterClass.git
+$ cd Node-MasterClass
+$ git checkout assignment-1
 $ node index.js
 ```
 
